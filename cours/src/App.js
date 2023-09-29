@@ -1,15 +1,18 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import Content from './Component/Content';
-import Footer from './Component/Footer';
-import Formulaire from './Component/Formulaire';
-import Header from './Component/Header';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Content from "./component/Content";
+import Footer from "./component/Footer";
+import Formulaire from "./component/Formulaire";
+import Header from "./component/Header";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Content />}/>
-      <Route path="/account" element={<Header />}/>
+      <Route path="/" element={<Content />} />
+      <Route path="/account" element={<Content />} />
+      <Route path="/account" element={<Footer />} />
+      <Route path="/account" element={<Formulaire />} />
+      <Route path="/account" element={<Header />} />
     </Routes>
   );
 }
